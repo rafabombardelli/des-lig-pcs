@@ -1,0 +1,33 @@
+unit main;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  Ttl_principal = class(TForm)
+    RadioGroup: TRadioGroup;
+    Button1: TButton;
+    Button2: TButton;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  tl_principal: Ttl_principal;
+
+implementation
+
+{$R *.dfm}
+
+procedure Ttl_principal.FormCreate(Sender: TObject);
+begin
+RadioGroup.ItemIndex := 0
+end;
+
+end.
